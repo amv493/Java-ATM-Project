@@ -55,7 +55,7 @@ public class Account {
         double balance = this.getBalance();
 
         // format the summary line, depending on the whether the balance is negative 
-        if (this.balance >= 0) {
+        if (balance >= 0) {
             return String.format("%s : $%.02f : %s", this.uuid, balance, 
                     this.name);
         } else {

@@ -80,7 +80,7 @@ public class User {
     public boolean validatePin(String aPin) {
 
        try {
-            MessageDisgest md = MessageDigest.getInstance("MD5");
+            MessageDigest md = MessageDigest.getInstance("MD5");
             return MessageDigest.isEqual(md.digest(aPin.getBytes()), 
                     this.pinHash);
        } catch (NoSuchAlgorithmException e) {
